@@ -65,9 +65,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(children: [
-      Text("Firebase Notifications"),
+      const Text("Firebase Notifications"),
       CupertinoButton(
-          child: Text("Copy token to clipboard"), onPressed: _copyToClipBoard)
+          onPressed: _copyToClipBoard,
+          child: const Text("Copy token to clipboard"))
     ]));
   }
 
